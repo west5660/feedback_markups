@@ -1,0 +1,97 @@
+label {
+    display: flex;
+    flex-direction: column;
+    /*margin-bottom: 1rem;*/
+  }
+option{
+    border-radius: 10px;
+    background-color: #c5cbe1;
+}
+
+option :hover{
+    background-color: #888da1;
+}
+
+option :active{
+    background-color: #63687c;
+}
+/*select {*/
+/*    padding: 0.5rem;*/
+/*	margin: 1rem;*/
+/*    font-size: 1rem;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 10px;*/
+/*	background: gainsboro;*/
+/*  }*/
+
+.custom-select-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .custom-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .custom-select-input {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    box-sizing: border-box;
+  }
+  
+  .custom-select-input:focus {
+    outline: none;
+    border-color: #000000;
+  }
+  
+  .hidden-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .custom-select-container p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .custom-select-option{
+    margin-bottom: 5px;
+  }
+.custom-select-comment{
+  width: 60%;
+  height: 80px;
+  padding: 8px;
+  font-size: 14ps;
+  border: 1px solid #ccc;
+  background-color:#e9eeff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.custom-select-dropdown{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
